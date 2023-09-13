@@ -171,8 +171,79 @@ color:#e4231b
     height: 10px;
     background: #eee;
 }
+.publication .publicationBox .value::before
+{
+    content: '';
+    position: absolute;
+    width: var(--i);
+    height: 100%;
+    background-color: #e4231b;
+}
+.adjustMargin
+{
+    margin-top: 40px;
+}
 
+.project_group
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+.projectBox
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.projectBox p:nth-child(1)
+{
+    font-weight: 500;
+}
 
+.projectBox b
+{
+    font-weight: 600;
+    color: #e4231b;
+}
+
+.projectBox b span
+{
+  position: relative;
+  top: -2px;
+  font-size: 0.8em;
+  color: #666;
+}
+.hobby
+{
+padding: 0 50px 50px;
+}
+
+.hobby ul
+{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+.hobby ul li
+{
+    list-style: none;
+    color: #333;
+    width: calc(100% / 3 - 20px);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: #f3f3f3;
+    text-align: center;
+    cursor: pointer;
+
+}
+/* .hobby ul li */
 /* body {
     height: 100%;
     background: #e43003; 
