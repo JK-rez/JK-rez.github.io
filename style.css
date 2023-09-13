@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e4d9d9;
+    border-radius: 50px;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background-color: #fff;
+    margin: 50px;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    border-radius: 50px;
+}
+
+#logo1{
+    float: right;
+    max-width:10%;
+    height:auto;
+}
+
+
+.header
+{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(45deg,#e4231b, #f8d7d6);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 0.1ems;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    
+}
+h2 span
+{   
+    font-size: 0.7em;
+}
+
+
+
+.group
+{
+    position: relative;
+    display: grid;
+    gap: 40px;
+    width: 100%;
+    grid-template-columns: 2fr 3fr;
+    margin-top: 20px;
+}
+.group .imageBx
+{
+    width: 100%;
+    position: relative;
+    margin-left: 20px;
+}
+.group .imageBx img
+{
+    width: 100%;
+    /* height: auto; */
+    border-radius: 10px;
+}
+
+.group p 
+{
+    color: #333;
+    font-size: 1.05em;
+}
+
+.bottom
+{
+    position: relative;
+    display: grid;
+    margin: 10px 20px 0px;
+    gap: 10px;
+    grid-template-columns: 2fr 3fr;
+}
+
+.bottom .left_side
+{
+    margin-top: 0px;
+}
+
+h4{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color:#fff;
+    background: linear-gradient(45deg,#e4231b, #f8d7d6);
+    font-weight: 600;
+    padding: 0 15px;
+    margin-top: 40px;
+    display: inline-flex;
+    border-radius: 10px;
+}
+.Info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.Info li
+{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.Info li .icon
+{
+color:#e4231b
+}
+.Info li .text
+{
+    color: #333;
+    font-size: 1.05em;
+}
+
+.publication {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 0;
+}
+.publication .publicationBox
+{
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 3fr;
+}
+.publication .publicationBox p
+{
+    color:#333;
+}
+.publication .publicationBox .value
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #eee;
+}
+
+
+/* body {
+    height: 100%;
+    background: #e43003; 
+}
+.container1{
+    display: grid;
+    place-items: center;
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    min-height: 100px;
+    border-radius: 50px;
+}
+#newtask input{
+    width: 75%;
+    height: 45px;
+    font-family: 'poppins', sans-serif;
+    font-size: 25px;
+    border: 0px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #0d75ec;
+}
+
+#newtask button{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px; 
+    border-radius: 50px;
+    border: 2px solid #d1d3d4;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    background-color: #fff ;
+    color: #111111;
+}
+
+#newtask button:hover{
+    background-color: #066acd;
+    color: #fff;
+    border-color: #066acd;
+    cursor: pointer;
+}
+
+.container2 {
+    display: grid;
+    place-items: center;
+    width: 20%;
+    min-width: 425px;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    top: 60%;
+    left: 50%;
+    background: #fff;
+    min-height: 66px;
+    border-radius: 10px;
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #111111;
+}
+
+.task {
+background-color: #c5e1e6;
+height: 50px;
+min-width: 400px;
+margin-top: 8px;
+margin-bottom: 8px;
+padding: 5px 5px;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border: 1px solid #939697;
+cursor: pointer;    
+}
+
+.task span{
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #111111;
+}
+
+.task button{
+    background: #0a2ea4;
+    color: white;
+    height: 100%;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+} */
